@@ -1,0 +1,51 @@
+2. Write a JavaScript conditional statement to find the sign of the product of three numbers. Display an alert box with the specified sign.
+Sample numbers : 3, -7, 2
+Output : The sign is -
+Click me to see the solution
+
+3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the results.
+Sample numbers : 0, -1, 4
+Output : 4, 0, -1
+Click me to see the solution
+
+Write a JavaScript program that iterates integers from 1 to 100. But for multiples of three print "Fizz" instead of the number and for multiples of five print "Buzz". For numbers multiples of both three and five print "FizzBuzz".
+
+12. Write a JavaScript program to sum 3 and 5 multiples under 1000.
+Click me to see the solution
+
+
+
+
+// 2. WAP to implement an Array by using random numbers
+// 3. WAP to implement an Array by using febonacci Series Terms
+// 4. WAP to Calculate sum of Elements of Array
+// 5. WAP to Calculate sum of Even and Odd Elements of Array also
+//    count them
+// 6. WAP to Calculate sum of Prime and not Prime Elements of Array
+//    also calculate them
+// 7. WAP to find smallest Element from Array
+// 8. WAP to find greatest Element from Array
+// 9. WAP to calculate occurrence of -ve,+ve and 0 in Array
+// 10. WAP to find first smallest,Second Smallest and third smallest
+//     Element from Array
+// 11. WAP to find first greatest,Second greatest and third greatest
+//     Element from Array
+// 12. WAP find nth smallest Elements from Array
+// 13. WAP find nth greatest Elements from Array
+// 14. WAP reverse an Array
+// 15. WAP to Swap two Arrays
+// 16. WAP to concate two Arrays
+// 17. WAP to insert an Element  at user's Specific Position
+// 18. WAP to Delete an Element  from user's Specific Position
+// 19. WAP to Delete any particular Element from all indexes from Array
+// 20. WAP to Delete all -ve Elements from Array
+// 21. WAP to Delete all odd Elements from Array
+// 22. WAP to Delete all non prime Elements from Array
+// 23. WAP to Delete all repeated Elements from Array
+// 24. WAP to count occurrance of any particular Element from Array
+// 25. WAP to count occurrance of all Elements of Array
+// 26. WAP to find UNION of two Arrays
+// 27. WAP to find Intersection of two Arrays
+// 28. WAP to find HCF of Array Elements
+// 29. WAP to find LCM of Array Elements
+ 

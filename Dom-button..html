@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <button id="btn" onclick="fun()">change</button>
+            <p id="pera">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolore eos quam quo quasi culpa tempora excepturi,
+                 exercitationem enim eaque nulla provident hic sit voluptates placeat 
+                 autem doloremque adipisci at.</p>
+        </div>
+
+        <script>
+            var text1="my name is karishma"
+            var text2="i wana be a codee"
+            var btn=document.getElementById("btn")
+            var p=document.getElementById("pera")
+            function fun(){
+                if(btn.innerHTML ==="change"){
+                    p.innerHTML=text2
+                    btn.innerHTML="Reset"
+                }
+                else{
+                    p.innerHTML=text1
+                    btn.innerHTML="change"
+                }
+    
+            }
+        </script>
+    </div>
+
+</body>
+</html>

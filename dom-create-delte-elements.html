@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=delete" />
+    <style>
+        * {
+            margin: 0;
+        }
+        .main {
+            width: 100vw;
+            height: 100vh;
+        }
+        .center {
+            width: 80%;
+            height: 100%;
+            margin: auto;
+        }
+        .first {
+            display: flex;
+            justify-content: space-between;
+            height: 6%;
+        }
+        .first button {
+            background-color: navy;
+            color: white;
+            padding: 8px;
+            width: 33%;
+        }
+        .second {
+            height: 94%;
+            overflow: auto;
+        }
+        .second ::-webkit-scrollbar {
+            display: none;
+        }
+        .second p {
+            background-color: gray;
+            color: white;
+            padding: 10px;
+            margin: 5px;
+            position: relative;
+        }
+        .material-symbols-outlined {
+            float: right;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <div class="first">
+                <button onclick="create()">Create</button>
+                <button onclick="deleteFirst()">Delete First</button>
+                <button onclick="deleteAll()">Delete All</button>
+            </div>
+            <div class="second" id="second">
+                <!-- Paragraphs will be created here -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        var second = document.querySelector(".second");
+        var count = 1;
+
+        // Function to create paragraphs
+        function create() {
+            var p = document.createElement("p");
+            p.innerHTML = `This is a paragraph ${count} <span class="material-symbols-outlined" onclick="deleteItem('p${count}')">delete</span>`;
+            p.id = `p${count}`;
+            count++;
+            second.appendChild(p);
+        }
+
+        // Function to delete a specific paragraph
+        function deleteItem(id) {
+            var p = document.getElementById(id);
+            if (p) {
+                second.removeChild(p);
+            }
+        }
+
+        // Function to delete the first paragraph
+        function deleteFirst() {
+            if (second.childNodes.length > 0) {
+                second.removeChild(second.childNodes[0]);
+            }
+        }
+
+        // Function to delete all paragraphs
+        function deleteAll() {
+            while (second.firstChild) {
+                second.removeChild(second.firstChild);
+            }
+        }
+    </script>
+</body>
+</html>

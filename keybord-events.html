@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <h3>Keyword Events Example</h3>
+            <h3 id="hname"> Name:</h3>
+            <h3 id="hemail"> Email:</h3>
+            <h3 id="hphone"> Mobile:</h3>
+            <h3 id="hdesignation"> Designation:</h3>
+            <h3 id="hcity"> City:</h3>
+            <h3 id="hstate"> State:</h3>
+            <form onsubmit="postData(event); return false;">
+                <input type="text" id="nameInput" name="name" placeholder="Full Name" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+                <input type="email" id="emailInput" name="email" placeholder="Email" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+                <input type="tel" id="phoneInput" name="phone" placeholder="Mobile-Number" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+                <input type="text" id="designationInput" name="designation" placeholder="Designation" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+                <input type="text" id="cityInput" name="city" placeholder="City" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+                <input type="text" id="stateInput" name="state" placeholder="State" onkeydown="fun1(event)" onkeypress="fun2(event)" onkeyup="fun3(event)"/>
+            </form>
+            <button onclick="postData()">Submit</button>
+        </div>
+    </div>
+    <script>
+        function fun1(e) {
+            console.log(e.key);
+            console.log(e.target.name);
+            console.log(e.target.id);
+            console.log(e.target.value);
+            let item = document.getElementById(e.target.id);
+            item.style.backgroundColor = "lightgray";
+            item.style.color = "white";
+        }
+
+        function fun2(e) {
+            let item = document.getElementById(e.target.id);
+            item.style.backgroundColor = "gray";
+            item.style.color = "white";
+        }
+
+        function fun3(e) {
+            let item = document.getElementById(e.target.id);
+            item.style.backgroundColor = "white";
+            item.style.color = "black";
+
+            let heading = document.getElementById('h' + e.target.id);
+            heading.innerHTML = `<span id="heading-span">${e.target.name}</span>: ${e.target.value}`;
+        }
+
+        function postData() {
+            alert(`
+            Name: ${document.getElementById("nameInput").value}
+            Email: ${document.getElementById("emailInput").value}
+            Phone: ${document.getElementById("phoneInput").value}
+            Designation: ${document.getElementById("designationInput").value}
+            City: ${document.getElementById("cityInput").value}
+            State: ${document.getElementById("stateInput").value}
+            `);
+        }
+    </script>
+</body>
+</html>

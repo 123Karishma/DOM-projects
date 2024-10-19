@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=menu" />
+    <style>
+        *{
+            margin: 0;
+        }
+        .menu{
+            width: 70vh;
+            
+        }
+        .menu h1{
+            background-color: blue;
+            margin: 10;
+            padding: 10px;
+            color: white;
+        }
+        .material-symbols-outlined{
+            float: right;
+            cursor: pointer;
+        }
+        .item ul {
+        list-style-type: none;
+        margin-left: -40px;
+        }
+        .item li{
+            background-color: blue;
+            padding: 10px;
+            margin: 2px;
+            color: white;
+        }
+        .item li:hover{
+            background-color: navy;
+        }
+        .item a{
+            text-decoration: none;
+            color: white;
+            font-family: Verdana;
+
+        }
+        .hide{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div class="menu">
+            <h1>menu <span class="material-symbols-outlined" onclick="fun()">
+                menu
+                </span></h1>
+            <div class="item hide">
+               <ul>
+                <li><a href="#"> Home</a></li>
+                <li><a href="#"> about Us</a></li>
+                <li><a href="#"> Servie</a></li>
+                <li><a href="#"> Featurs</a></li>
+                <li><a href="#"> FQA</a></li>
+
+               </ul>
+
+            </div>
+            <script>
+                var item =document.querySelector(".item")
+                function fun(){
+                    item.classList.toggle("hide")
+                }
+            </script>
+</body>
+</html>

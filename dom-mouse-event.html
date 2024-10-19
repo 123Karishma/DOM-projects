@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div 
+    onmouseover="fun1()"
+    onmouseenter="fun2()"
+    onmousedown="fun3()"
+    onmouseup="fun4()"
+    onclick="fun5()"
+    ondblclick="fun6()"
+    onmousemove="fun7()"
+    onmousewheel="fun8()"
+    onmouseout="fun9()"
+    onmouseleave="fun10()"
+>
+    hello
+</div>
+<main></main>
+
+<script>
+    var main = document.querySelector("main");
+    function fun1() {
+        console.log("onmouseover event is called");
+        main.innerHTML = "mouseover event is called";
+        main.style.backgroundColor = "gray";
+        main.style.color = "white";
+    }
+
+    function fun2() {
+        console.log("onmousenetr event is called");
+        main.innerHTML = "mouseenter event is called";
+        main.style.backgroundColor = "pink";
+        main.style.color = "white";
+    }
+    function fun3() {
+        console.log("onmousdown event is called");
+        main.innerHTML = "mousedown event is called";
+        main.style.backgroundColor = "brown";
+        main.style.color = "white";
+    }
+    function fun4() {
+        console.log("onmouseup event is called");
+        main.innerHTML = "mouseup event is called";
+        main.style.backgroundColor = "red";
+        main.style.color = "white";
+    }
+    function fun5() {
+        console.log("onclick event is called");
+        main.innerHTML = "onclick event is called";
+        main.style.backgroundColor = "green";
+        main.style.color = "white";
+    }
+    function fun6() {
+        console.log("ondbclick event is called");
+        main.innerHTML = "ondbclick event is called";
+        main.style.backgroundColor = "black";
+        main.style.color = "white";
+    }
+    function fun7() {
+        console.log("onmousemove event is called");
+        main.innerHTML = "onmousemove event is called";
+        main.style.backgroundColor = "blue";
+        main.style.color = "white";
+    }
+    function fun8() {
+        console.log("onmousewheel event is called");
+        main.innerHTML = "onmousewheel event is called";
+        main.style.backgroundColor = "yello";
+        main.style.color = "white";
+    }
+    function fun9() {
+        console.log("onmouseout event is called");
+        main.innerHTML = "onmouseout event is called";
+        main.style.backgroundColor = "violet";
+        main.style.color = "white";
+    }
+    function fun10() {
+        console.log("onmouseleav event is called");
+        main.innerHTML = "onmouseleav event is called";
+        main.style.backgroundColor = "orange";
+        main.style.color = "white";
+    }
+</script>
+
+
+</body>
+</html>

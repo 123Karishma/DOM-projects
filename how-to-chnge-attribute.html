@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .main{
+            width: 100vw;
+            height: 100vh;
+            background-color: gray;
+            position:absolute;
+        }
+        .center{
+            text-align: center;
+        }
+        #btn{
+            border: 2;
+            border-color: black;
+            background-color:black;
+            color: white;
+            font-size:xx-large;
+            border-radius: 2px;
+            padding: 5px;
+            text-decoration: none;
+            margin-left: 12%;
+            margin-top: 30%;
+
+            
+
+        }
+        #btn:hover{
+            background-color: white;
+            border-color:white;
+            color: black;
+        }
+        #img{
+            width: 30vw;
+            height:50vh ;
+            border: 4px ;
+            position: fixed;
+            margin-top: 5%;
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="center">
+            <img src="./images/Of.png" id="img" alt=" Light-off">
+            <button id="btn" onclick="fun()">On</button>
+        </div>
+    </div>
+    <script>
+        var img=document.getElementById("img")
+        var btn=document.getElementById("btn")
+        function fun(){
+            if(btn.innerHTML=="On"){
+                img.src="./images/Onn.png"
+                btn.innerHTML="Of"
+            }else{
+                img.src= "./images/Of.png"
+                btn.innerHTML="On"
+            }
+        }
+    </script>
+    
+</body>
+</html>
